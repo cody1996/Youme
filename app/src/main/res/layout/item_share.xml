@@ -18,7 +18,8 @@
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:adjustViewBounds="true"
-            android:src="@drawable/user_head_default" />
+            android:src="@drawable/user_head_default"
+            android:elevation="4dp" />
         
         <LinearLayout
             android:orientation="vertical"
@@ -129,6 +130,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="XXX：内容内容。\nXXX：内容内容。\nXXX：内容内容。\nXXX：内容内容。"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:ellipsize="end" />
 
 </LinearLayout>
