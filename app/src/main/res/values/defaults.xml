@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="default_pager_indicator_centered">true</bool>
+    <color name="default_pager_indicator_fill_color">@color/colorPrimary</color>
+    <color name="default_pager_indicator_page_color">@android:color/transparent</color>
+    <integer name="default_pager_indicator_orientation">0</integer>
+    <dimen name="default_pager_indicator_radius">3dp</dimen>
+    <bool name="default_pager_indicator_snap">false</bool>
+    <color name="default_pager_indicator_stroke_color">@color/color_grey_150</color>
+    <dimen name="default_pager_indicator_stroke_width">1dp</dimen>
+</resources>

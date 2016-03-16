@@ -1,0 +1,8 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="size_text_title">20sp</dimen>
+    <dimen name="text_size_nav">12sp</dimen>
+    <dimen name="tour_gate_height">72dp</dimen>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.codyme.youme.Views.LoopViewPager
+        android:id="@+id/pager_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.codyme.youme.Views.ViewPagerIndicator
+        android:id="@+id/indicator_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="36dp"
+        android:paddingBottom="12dp"
+        android:layout_alignBottom="@+id/pager_banner"
+        android:layout_alignRight="@+id/pager_banner"
+        android:paddingLeft="36dp"
+        android:paddingTop="12dp" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="ViewPagerIndicatorStyle">@style/CustomViewPagerIndicator</item>
+    </style>
+
+    <style name="CustomViewPagerIndicator">
+        <item name="fillColor">@color/colorPrimary</item>
+        <item name="strokeColor">@android:color/white</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="radius">3dp</item>
+        <item name="centered">true</item>
+    </style>
+
+</resources>
