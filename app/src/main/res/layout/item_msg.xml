@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/user_head_default"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="8dp"
+        android:gravity="left">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:text="Nickname"
+            android:paddingRight="56dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="你好啊！哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+            android:paddingRight="56dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingRight="8dp"
+        android:gravity="center_horizontal|right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="昨天"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="99+"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:background="@drawable/tip_msg_new"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:minHeight="20dp"
+            android:minWidth="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

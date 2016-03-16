@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">有觅</string>
+    <string name="position_fix">定位</string>
+    <string name="nav_user">我的</string>
+    <string name="nav_share">分享</string>
+    <string name="nav_msg">消息</string>
+    <string name="nav_goods">觅物</string>
+    <string name="nav_tour">觅游</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share">分享</string>
+    <string name="scan_QR">扫一扫</string>
+    <string name="my_QR">我的二维码</string>
+    <string name="add_friend">添加朋友</string>
+</resources>
