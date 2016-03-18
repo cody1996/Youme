@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.codyme.youme.GoodsFragment">
+    tools:context=".GoodFragment">
 
     <com.codyme.youme.Views.InnerListView
         android:id="@+id/list_goods_main"

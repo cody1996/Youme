@@ -24,11 +24,7 @@ public class TourItemAdapter extends ItemAdapter {
     }
 
     public View initItem (JSONObject info){
-        View item = mInflater.inflate(R.layout.item_tour_goods, null);
-        ImageView cover = (ImageView) item.findViewById(R.id.item_cover);
-        TextView title = (TextView) item.findViewById(R.id.item_title);
-        TextView tag = (TextView) item.findViewById(R.id.item_tag);
-        TextView price = (TextView) item.findViewById(R.id.item_price);
+        View item = mInflater.inflate(R.layout.item_tour, null);
         return item;
     }
 }

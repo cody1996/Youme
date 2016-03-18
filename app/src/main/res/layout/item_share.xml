@@ -18,8 +18,7 @@
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:adjustViewBounds="true"
-            android:src="@drawable/user_head_default"
-            android:elevation="4dp" />
+            android:src="@drawable/user_head_default" />
         
         <LinearLayout
             android:orientation="vertical"
@@ -70,7 +69,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="?attr/selectableItemBackground"
+            android:background="@android:color/transparent"
             android:textColor="@color/color_text_link"
             android:text="转发"
             android:textSize="14sp" />
@@ -86,7 +85,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="?attr/selectableItemBackground"
+            android:background="@android:color/transparent"
             android:textColor="@color/color_text_link"
             android:text="赞"
             android:textSize="14sp" />
@@ -102,7 +101,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="?attr/selectableItemBackground"
+            android:background="@android:color/transparent"
             android:textColor="@color/color_text_link"
             android:text="评论"
             android:textSize="14sp" />
