@@ -1,8 +1,102 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.codyme.youme.ShareFragment">
+    tools:context="com.codyme.youme.ShareFragment"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:text="个人主页"
+            android:id="@+id/button11"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_btn_share_top_left" />
+
+        <Button
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:text="与我相关"
+            android:id="@+id/button12"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:background="@drawable/bg_btn_share_top_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <Button
+            android:id="@+id/btn_share_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="全部"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_share_middle"
+            android:textSize="16sp"
+            android:textColor="@color/color_text_nav" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_dark_2" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="本地"
+            android:id="@+id/button14"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_share_middle"
+            android:textSize="16sp"
+            android:textColor="@color/color_text_nav" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_dark_2" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="觅友"
+            android:id="@+id/button15"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_share_middle"
+            android:textSize="16sp"
+            android:textColor="@color/color_text_nav" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_dark_2" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="热榜"
+            android:id="@+id/button16"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_share_middle"
+            android:textSize="16sp"
+            android:textColor="@color/color_text_nav" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/trans_dark_2" />
 
     <com.codyme.youme.Views.InnerListView
         android:id="@+id/list_share_main"
@@ -12,4 +106,4 @@
         android:divider="@android:color/transparent"
         android:footerDividersEnabled="false" />
 
-</FrameLayout>
+</LinearLayout>
