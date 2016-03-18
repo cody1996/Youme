@@ -33,6 +33,7 @@ public class GoodFragment extends Fragment {
         contentView = inflater.inflate(R.layout.fragment_good, container, false);
 
         initList();
+        contentView.findViewById(R.id.btn_share_all).setSelected(true);
 
         return contentView;
     }

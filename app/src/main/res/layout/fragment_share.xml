@@ -35,7 +35,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="48dp">
+        android:layout_height="36dp">
 
         <Button
             android:id="@+id/btn_share_all"
@@ -43,14 +43,9 @@
             android:layout_height="match_parent"
             android:text="全部"
             android:layout_weight="1"
-            android:background="@drawable/bg_btn_share_middle"
+            android:background="@drawable/bg_indicator_horizontal"
             android:textSize="16sp"
             android:textColor="@color/color_text_nav" />
-
-        <View
-            android:layout_width="0.5dp"
-            android:layout_height="match_parent"
-            android:background="@color/trans_dark_2" />
 
         <Button
             android:layout_width="0dp"
@@ -58,14 +53,9 @@
             android:text="本地"
             android:id="@+id/button14"
             android:layout_weight="1"
-            android:background="@drawable/bg_btn_share_middle"
+            android:background="@drawable/bg_indicator_horizontal"
             android:textSize="16sp"
             android:textColor="@color/color_text_nav" />
-
-        <View
-            android:layout_width="0.5dp"
-            android:layout_height="match_parent"
-            android:background="@color/trans_dark_2" />
 
         <Button
             android:layout_width="0dp"
@@ -73,14 +63,9 @@
             android:text="觅友"
             android:id="@+id/button15"
             android:layout_weight="1"
-            android:background="@drawable/bg_btn_share_middle"
+            android:background="@drawable/bg_indicator_horizontal"
             android:textSize="16sp"
             android:textColor="@color/color_text_nav" />
-
-        <View
-            android:layout_width="0.5dp"
-            android:layout_height="match_parent"
-            android:background="@color/trans_dark_2" />
 
         <Button
             android:layout_width="0dp"
@@ -88,7 +73,7 @@
             android:text="热榜"
             android:id="@+id/button16"
             android:layout_weight="1"
-            android:background="@drawable/bg_btn_share_middle"
+            android:background="@drawable/bg_indicator_horizontal"
             android:textSize="16sp"
             android:textColor="@color/color_text_nav" />
     </LinearLayout>
@@ -96,7 +81,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/trans_dark_2" />
+        android:background="@color/colorPrimary" />
 
     <com.codyme.youme.Views.InnerListView
         android:id="@+id/list_share_main"
