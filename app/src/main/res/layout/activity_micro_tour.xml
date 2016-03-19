@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.codyme.youme.MicroTourActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_micro_tour"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_indicator_vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="附近"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="热门"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:id="@+id/btn_micro_classification_nature"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="自然"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="古镇"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="公园"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="DIY"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="游乐场"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="户外"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="分类"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="分类"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="分类"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="分类"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="分类"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="分类"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="分类"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_indicator_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/trans_dark_1" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ListView
+            android:id="@+id/list_micro_tour_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+</LinearLayout>
