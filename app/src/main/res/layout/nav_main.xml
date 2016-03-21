@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="64dp"
+    android:layout_height="56dp"
     android:gravity="center_vertical"
     android:background="@drawable/bg_nav">
 
@@ -16,7 +16,8 @@
         android:textColor="@color/color_text_nav"
         android:textSize="@dimen/text_size_nav"
         android:background="@android:color/transparent"
-        android:gravity="center" />
+        android:gravity="center"
+        android:padding="2dp" />
 
     <Button
         android:id="@+id/btn_nav_goods"
@@ -28,7 +29,8 @@
         android:textColor="@color/color_text_nav"
         android:textSize="@dimen/text_size_nav"
         android:background="@android:color/transparent"
-        android:gravity="center" />
+        android:gravity="center"
+        android:padding="2dp" />
 
     <Button
         android:id="@+id/btn_nav_msg"
@@ -40,7 +42,8 @@
         android:textColor="@color/color_text_nav"
         android:textSize="@dimen/text_size_nav"
         android:background="@android:color/transparent"
-        android:gravity="center" />
+        android:gravity="center"
+        android:padding="2dp" />
 
     <Button
         android:id="@+id/btn_nav_share"
@@ -52,7 +55,8 @@
         android:textColor="@color/color_text_nav"
         android:textSize="@dimen/text_size_nav"
         android:background="@android:color/transparent"
-        android:gravity="center" />
+        android:gravity="center"
+        android:padding="2dp" />
 
     <Button
         android:id="@+id/btn_nav_user"
@@ -64,6 +68,7 @@
         android:textColor="@color/color_text_nav"
         android:textSize="@dimen/text_size_nav"
         android:background="@android:color/transparent"
-        android:gravity="center" />
+        android:gravity="center"
+        android:padding="2dp" />
 
 </LinearLayout>

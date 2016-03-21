@@ -7,6 +7,7 @@
     <com.codyme.youme.Views.InnerListView
         android:id="@+id/list_msg_main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:footerDividersEnabled="true" />
 
 </FrameLayout>
