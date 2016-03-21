@@ -6,37 +6,22 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ListView;
 
-import com.codyme.youme.Adapters.TourItemAdapter;
-
-public class MicroTourActivity extends AppCompatActivity {
+public class ThemeTourActivity extends AppCompatActivity {
 
     private Toolbar mToolbar;
-
-    private ListView listMain;
-    private TourItemAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_micro_tour);
+        setContentView(R.layout.activity_theme_tour);
 
         initToolbar();
-        initList();
-    }
-
-    private void initList() {
-        findViewById(R.id.btn_micro_classification_nature).setSelected(true);
-        listMain = (ListView) findViewById(R.id.list_micro_tour_main);
-        mAdapter = new TourItemAdapter(this);
-        listMain.setAdapter(mAdapter);
     }
 
     private void initToolbar() {
-
-        mToolbar = (Toolbar) findViewById(R.id.toolbar_micro_tour);
-        mToolbar.setTitle("微旅行");
+        mToolbar = (Toolbar) findViewById(R.id.toolbar_theme_tour);
+        mToolbar.setTitle("主题游");
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {

@@ -37,12 +37,12 @@
             android:padding="4dp" />
 
         <Button
+            android:id="@+id/gateway_theme_tour"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="?attr/selectableItemBackground"
             android:text="主题游"
-            android:id="@+id/button3"
             android:textSize="12sp"
             android:drawableTop="@drawable/gateway_default_3"
             android:padding="4dp" />

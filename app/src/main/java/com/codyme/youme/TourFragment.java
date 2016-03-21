@@ -70,12 +70,16 @@ public class TourFragment extends Fragment {
                     case R.id.gateway_micro_tour :
                         gatewayIntent.setClass(getContext(), MicroTourActivity.class);
                         break;
+                    case R.id.gateway_theme_tour :
+                        gatewayIntent.setClass(getContext(), ThemeTourActivity.class);
+                        break;
                 }
                 startActivity(gatewayIntent);
             }
         };
 
         contentView.findViewById(R.id.gateway_micro_tour).setOnClickListener(gatewayListener);
+        contentView.findViewById(R.id.gateway_theme_tour).setOnClickListener(gatewayListener);
     }
 
 }
