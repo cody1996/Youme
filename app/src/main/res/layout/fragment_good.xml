@@ -2,35 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.codyme.youme.ShareFragment"
-    android:orientation="vertical">
-
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/colorPrimary"
-        android:gravity="center">
-
-        <Button
-            android:layout_width="96dp"
-            android:layout_height="36dp"
-            android:text="个人主页"
-            android:id="@+id/button11"
-            android:textSize="16sp"
-            android:textColor="@android:color/white"
-            android:background="@drawable/bg_btn_share_top_left" />
-
-        <Button
-            android:layout_width="96dp"
-            android:layout_height="36dp"
-            android:text="与我相关"
-            android:id="@+id/button12"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            android:background="@drawable/bg_btn_share_top_right" />
-    </LinearLayout>
+    android:orientation="vertical"
+    tools:context=".GoodFragment">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -38,10 +11,10 @@
         android:layout_height="36dp">
 
         <Button
-            android:id="@+id/btn_share_all"
+            android:id="@+id/btn_share_hot"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="全部"
+            android:text="热榜"
             android:layout_weight="1"
             android:background="@drawable/bg_indicator_horizontal"
             android:textSize="16sp"
@@ -60,7 +33,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="觅友"
+            android:text="有觅自营"
             android:id="@+id/button15"
             android:layout_weight="1"
             android:background="@drawable/bg_indicator_horizontal"
@@ -68,14 +41,14 @@
             android:textColor="@color/color_text_nav" />
 
         <Button
+            android:id="@+id/btn_share_all"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="热榜"
-            android:id="@+id/button16"
             android:layout_weight="1"
             android:background="@drawable/bg_indicator_horizontal"
             android:textSize="16sp"
-            android:textColor="@color/color_text_nav" />
+            android:textColor="@color/color_text_nav"
+            android:text="全部" />
     </LinearLayout>
 
     <View
@@ -84,11 +57,8 @@
         android:background="@color/colorPrimary" />
 
     <com.codyme.youme.Views.InnerListView
-        android:id="@+id/list_share_main"
+        android:id="@+id/list_goods_main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:dividerHeight="0dp"
-        android:divider="@android:color/transparent"
-        android:footerDividersEnabled="false" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

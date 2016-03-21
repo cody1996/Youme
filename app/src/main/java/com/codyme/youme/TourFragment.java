@@ -1,6 +1,7 @@
 package com.codyme.youme;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -19,6 +20,8 @@ import com.codyme.youme.Views.ViewPagerIndicator;
 public class TourFragment extends Fragment {
 
     private View contentView;
+
+    private Intent gatewayIntent = new Intent();
 
     private View bannerMain;
     private ViewPager pagerMain;
@@ -40,6 +43,7 @@ public class TourFragment extends Fragment {
 
         initBanner();
         initList();
+        initGateway();
 
         return contentView;
     }
@@ -56,6 +60,22 @@ public class TourFragment extends Fragment {
         mAdapter = new TourItemAdapter(getContext());
         listMain.setAdapter(mAdapter);
 
+    }
+
+    private void initGateway() {
+        View.OnClickListener gatewayListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.gateway_micro_tour :
+                        gatewayIntent.setClass(getContext(), MicroTourActivity.class);
+                        break;
+                }
+                startActivity(gatewayIntent);
+            }
+        };
+
+        contentView.findViewById(R.id.gateway_micro_tour).setOnClickListener(gatewayListener);
     }
 
 }

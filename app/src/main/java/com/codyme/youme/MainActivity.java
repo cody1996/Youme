@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener mClickListener;
 
     private TourFragment fragmentTour;
-    private GoodsFragment fragmentGoods;
+    private GoodFragment fragmentGoods;
     private MsgFragment fragmentMsg;
     private ShareFragment fragmentShare;
     private UserFragment fragmentUser;
@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
             case 1:
                 btnNavGoods.setSelected(true);
                 if(fragmentGoods == null){
-                    fragmentGoods = new GoodsFragment();
+                    fragmentGoods = new GoodFragment();
                     mTransaction.show(fragmentGoods);
                 }
                 mTransaction.replace(R.id.container_main, fragmentGoods);

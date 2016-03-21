@@ -7,21 +7,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.codyme.youme.Adapters.GoodsItemAdapter;
+import com.codyme.youme.Adapters.GoodItemAdapter;
 import com.codyme.youme.Views.InnerListView;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class GoodsFragment extends Fragment {
+public class GoodFragment extends Fragment {
 
     private View contentView;
 
     private InnerListView listMain;
-    private GoodsItemAdapter mAdapter;
+    private GoodItemAdapter mAdapter;
 
-    public GoodsFragment() {
+    public GoodFragment() {
         // Required empty public constructor
     }
 
@@ -30,16 +30,17 @@ public class GoodsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        contentView = inflater.inflate(R.layout.fragment_goods, container, false);
+        contentView = inflater.inflate(R.layout.fragment_good, container, false);
 
         initList();
+        contentView.findViewById(R.id.btn_share_all).setSelected(true);
 
         return contentView;
     }
 
     private void initList() {
         listMain = (InnerListView) contentView.findViewById(R.id.list_goods_main);
-        mAdapter = new GoodsItemAdapter(getContext());
+        mAdapter = new GoodItemAdapter(getContext());
         listMain.setAdapter(mAdapter);
     }
 
