@@ -182,7 +182,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="32dp"
-        android:text="价格区间"
+        android:text="条件筛选"
         android:gravity="center"
         android:textSize="16sp"
         android:textColor="@color/colorPrimary" />
@@ -197,6 +197,15 @@
         android:paddingLeft="8dp"
         android:paddingRight="8dp" >
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="价格区间："
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" />
+
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -209,7 +218,9 @@
             android:singleLine="true"
             android:textSize="16sp"
             android:paddingLeft="8dp"
-            android:paddingRight="8dp" />
+            android:paddingRight="8dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:text="500"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -227,35 +238,53 @@
             android:layout_weight="1"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:text="12345678901234567890"
             android:singleLine="true"
             android:maxLines="1"
             android:textSize="16sp"
             android:paddingLeft="8dp"
-            android:paddingRight="8dp" />
+            android:paddingRight="8dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:text="800" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="觅一觅"
-            android:id="@+id/button13"
-            android:layout_marginRight="8dp"
-            android:textSize="16sp" />
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:background="@color/trans_dark_2" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:text="兴趣标签"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColor="@color/colorPrimary" />
-
     <include layout="@layout/divider_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="行程天数："
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" />
+
+        <Spinner
+            android:id="@+id/spinner_tour_theme_days"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="觅一觅"
+        android:id="@+id/button13"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" />
 
 </LinearLayout>

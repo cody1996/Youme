@@ -5,6 +5,7 @@ import android.support.v4.view.PagerAdapter;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.codyme.youme.R;
 
@@ -46,7 +47,7 @@ public class LoopViewPager extends InnerViewPager {
 
         mViewList = new ArrayList<View>();
         for (int i = 0; i < mCount; i++){
-            ClickableImageView imageView = new ClickableImageView(mContext);
+            ImageView imageView = new ImageView(mContext);
             imageView.setAdjustViewBounds(true);
             imageView.setImageDrawable(getResources().getDrawable(R.drawable.banner_default));
             mViewList.add(imageView);
