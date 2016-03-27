@@ -10,6 +10,14 @@ import android.widget.ListView;
 
 import com.codyme.youme.Adapters.TourItemAdapter;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class MicroTourActivity extends AppCompatActivity {
 
     private Toolbar mToolbar;
@@ -27,10 +35,28 @@ public class MicroTourActivity extends AppCompatActivity {
     }
 
     private void initList() {
-        findViewById(R.id.btn_micro_classification_nature).setSelected(true);
+        findViewById(R.id.btn_micro_town).setSelected(true);
         listMain = (ListView) findViewById(R.id.list_micro_tour_main);
         mAdapter = new TourItemAdapter(this);
         listMain.setAdapter(mAdapter);
+
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("tour_micro_town.json"), "UTF-8"));
+            String line;
+            StringBuilder builder = new StringBuilder();
+            while ((line = br.readLine()) != null) {
+                builder.append(line);
+            }
+            JSONArray infoList = new JSONObject(builder.toString()).getJSONArray("list");
+
+            for(int i = 0; i < infoList.length(); i++){
+                mAdapter.add(mAdapter.initItem(infoList.getJSONObject(i)));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
     private void initToolbar() {

@@ -12,12 +12,14 @@ import java.util.ArrayList;
  * Created by cody on 2016/3/10.
  */
 public class ItemAdapter extends BaseAdapter {
+    protected Context mContext;
     protected LayoutInflater mInflater;
 
     protected ArrayList<View> itemList;
 
     public ItemAdapter (Context context){
-        mInflater = LayoutInflater.from(context);
+        mContext = context;
+        mInflater = LayoutInflater.from(mContext);
         itemList = new ArrayList<>();
     }
 
