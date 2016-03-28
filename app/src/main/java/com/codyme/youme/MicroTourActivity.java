@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.codyme.youme.Adapters.TourItemAdapter;
+import com.codyme.youme.Utils.JSONHelper;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -41,22 +42,19 @@ public class MicroTourActivity extends AppCompatActivity {
         listMain.setAdapter(mAdapter);
 
         try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("tour_micro_town.json"), "UTF-8"));
-            String line;
-            StringBuilder builder = new StringBuilder();
-            while ((line = br.readLine()) != null) {
-                builder.append(line);
-            }
-            JSONArray infoList = new JSONObject(builder.toString()).getJSONArray("list");
+            JSONObject result = JSONHelper.buildObjectFromAssets(this, "json/tour_micro_town.json");
+            JSONArray infoList = null;
+
+            if (result != null)
+                infoList = result.getJSONArray("list");
 
             for(int i = 0; i < infoList.length(); i++){
                 mAdapter.add(mAdapter.initItem(infoList.getJSONObject(i)));
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
     }
 
     private void initToolbar() {

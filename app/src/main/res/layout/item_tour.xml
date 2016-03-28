@@ -12,14 +12,14 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/item_cover_tour"
+            android:id="@+id/item_tour_cover"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/banner_default" />
 
         <TextView
-            android:id="@+id/item_tag_tour"
+            android:id="@+id/item_tour_tag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -36,12 +36,12 @@
             android:singleLine="true" />
 
         <TextView
-            android:id="@+id/item_price_tour"
+            android:id="@+id/item_tour_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxWidth="120dp"
-            android:layout_alignBottom="@+id/item_cover_tour"
-            android:layout_alignRight="@+id/item_cover_tour"
+            android:layout_alignBottom="@+id/item_tour_cover"
+            android:layout_alignRight="@+id/item_tour_cover"
             android:layout_marginBottom="8dp"
             android:padding="8dp"
             android:background="@drawable/bg_price_tour"
@@ -53,7 +53,7 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/item_title_tour"
+        android:id="@+id/item_tour_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="16sp"
@@ -67,7 +67,7 @@
         android:ellipsize="end" />
 
     <TextView
-        android:id="@+id/item_subtitle_tour"
+        android:id="@+id/item_tour_subtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="14sp"

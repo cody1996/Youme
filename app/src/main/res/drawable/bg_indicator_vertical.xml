@@ -3,8 +3,9 @@
     <item android:state_selected="true">
         <layer-list>
             <item android:drawable="@color/colorPrimary" />
-            <item android:left="4dp" android:drawable="@color/color_grey_150" />
+            <item android:left="4dp" android:drawable="@android:color/background_light" />
         </layer-list>
     </item>
-    <item android:drawable="@color/color_grey_300" />
+    <item android:state_pressed="true" android:drawable="@color/color_grey_300" />
+    <item android:drawable="@color/color_grey_150" />
 </selector>

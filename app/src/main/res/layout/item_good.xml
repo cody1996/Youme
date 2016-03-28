@@ -6,7 +6,7 @@
     android:padding="8dp">
 
     <ImageView
-        android:id="@+id/item_cover"
+        android:id="@+id/item_good_cover"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:adjustViewBounds="true"
@@ -20,22 +20,20 @@
         android:paddingLeft="8dp">
 
         <TextView
-            android:id="@+id/item_title"
+            android:id="@+id/item_good_title"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
-            android:text="【有觅自营】果园葡萄 无公害 绿色健康 自摘称重 一斤"
             android:gravity="left|center_vertical"
             android:textSize="18sp"
             android:maxLines="2"
             android:ellipsize="end" />
 
         <TextView
-            android:id="@+id/item_tag"
+            android:id="@+id/item_good_tag"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="四川，绿色，水果"
             android:gravity="left|center_vertical"
             android:textSize="14sp"
             android:textColor="@color/color_text_link"
@@ -43,11 +41,10 @@
             android:ellipsize="end" />
 
         <TextView
-            android:id="@+id/item_price"
+            android:id="@+id/item_good_price"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="￥35.00"
             android:gravity="left|bottom"
             android:textSize="24sp"
             android:textColor="@color/colorPrimary"
