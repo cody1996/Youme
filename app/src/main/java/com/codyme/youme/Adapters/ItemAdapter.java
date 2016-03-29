@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by cody on 2016/3/10.
@@ -15,7 +16,7 @@ public class ItemAdapter extends BaseAdapter {
     protected Context mContext;
     protected LayoutInflater mInflater;
 
-    protected ArrayList<View> itemList;
+    private List<View> itemList;
 
     public ItemAdapter (Context context){
         mContext = context;

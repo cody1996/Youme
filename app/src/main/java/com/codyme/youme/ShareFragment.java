@@ -8,7 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.codyme.youme.Adapters.ShareItemAdapter;
+import com.codyme.youme.Utils.JSONHelper;
 import com.codyme.youme.Views.InnerListView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 /**
@@ -42,6 +47,20 @@ public class ShareFragment extends Fragment {
         listMain = (InnerListView) contentView.findViewById(R.id.list_share_main);
         mAdapter = new ShareItemAdapter(getContext());
         listMain.setAdapter(mAdapter);
+
+        try {
+            JSONObject result = JSONHelper.buildObjectFromAssets(getContext(), "json/share_main.json");
+            JSONArray infoList = null;
+
+            if (result != null)
+                infoList = result.getJSONArray("list");
+
+            for(int i = 0; i < infoList.length(); i++){
+                mAdapter.add(mAdapter.initItem(infoList.getJSONObject(i)));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
 }

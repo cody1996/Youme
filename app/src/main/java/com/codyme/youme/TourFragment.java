@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.codyme.youme.Adapters.BannerPagerAdapter;
 import com.codyme.youme.Adapters.TourItemAdapter;
 import com.codyme.youme.Utils.JSONHelper;
 import com.codyme.youme.Views.InnerListView;
@@ -30,10 +31,11 @@ public class TourFragment extends Fragment {
 
     private View bannerMain;
     private ViewPager pagerMain;
+    private BannerPagerAdapter bannerPagerAdapter;
     private ViewPagerIndicator indicatorMain;
 
     private InnerListView listMain;
-    private TourItemAdapter mAdapter;
+    private TourItemAdapter tourItemAdapter;
 
     public TourFragment() {
         // Required empty public constructor
@@ -56,14 +58,30 @@ public class TourFragment extends Fragment {
     private void initBanner() {
         bannerMain = contentView.findViewById(R.id.banner_tour_main);
         pagerMain = (ViewPager) bannerMain.findViewById(R.id.pager_banner);
+//        bannerPagerAdapter = new BannerPagerAdapter(getContext());
+//
+//        try {
+//            JSONObject result = JSONHelper.buildObjectFromAssets(getContext(), "json/banner_tour_main.json");
+//            JSONArray infoList = null;
+//
+//            if (result != null)
+//                infoList = result.getJSONArray("list");
+//
+//            for(int i = 0; i < infoList.length(); i++){
+//                bannerPagerAdapter.add(bannerPagerAdapter.initItem(infoList.getJSONObject(i)));
+//            }
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//        pagerMain.setAdapter(bannerPagerAdapter);
         indicatorMain = (ViewPagerIndicator) bannerMain.findViewById(R.id.indicator_banner);
         indicatorMain.setViewPager(pagerMain);
     }
 
     private void initList() {
         listMain = (InnerListView) contentView.findViewById(R.id.list_tour_main);
-        mAdapter = new TourItemAdapter(getContext());
-        listMain.setAdapter(mAdapter);
+        tourItemAdapter = new TourItemAdapter(getContext());
+        listMain.setAdapter(tourItemAdapter);
 
         try {
             JSONObject result = JSONHelper.buildObjectFromAssets(getContext(), "json/tour_main.json");
@@ -73,7 +91,7 @@ public class TourFragment extends Fragment {
                 infoList = result.getJSONArray("list");
 
             for(int i = 0; i < infoList.length(); i++){
-                mAdapter.add(mAdapter.initItem(infoList.getJSONObject(i)));
+                tourItemAdapter.add(tourItemAdapter.initItem(infoList.getJSONObject(i)));
             }
         } catch (JSONException e) {
             e.printStackTrace();
