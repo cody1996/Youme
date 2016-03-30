@@ -19,48 +19,15 @@
             android:layout_gravity="center" />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="你还未登录！"
-            android:id="@+id/textView"
+            android:text="请点击头像登录"
             android:gravity="center"
             android:padding="8dp"
             android:textIsSelectable="false"
             android:textSize="16sp"
             android:textColor="@android:color/white" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
-
-            <Button
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:text="登录"
-                android:id="@+id/button"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:layout_marginRight="36dp"
-                android:padding="8dp"
-                android:gravity="center"
-                android:minHeight="36dp" />
-
-            <Button
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:text="注册"
-                android:id="@+id/button2"
-                android:textSize="18sp"
-                android:textColor="@android:color/white"
-                android:background="?attr/selectableItemBackground"
-                android:layout_marginLeft="36dp"
-                android:padding="8dp"
-                android:gravity="center"
-                android:minHeight="36dp" />
-        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout

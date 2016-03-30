@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menu_share"
-        android:icon="@drawable/ic_add_circle_outline_black_24dp"
+        android:id="@+id/menu_add_share"
+        android:icon="@drawable/ic_menu_add_share"
         android:title="@string/share" />
     <item
         android:id="@+id/menu_scan_QR"
-        android:icon="@drawable/ic_search_white_36dp"
+        android:icon="@drawable/ic_menu_scan_qr"
         android:title="@string/scan_QR" />
     <item
         android:id="@+id/menu_my_QR"
-        android:icon="@drawable/ic_place_white_24dp"
+        android:icon="@drawable/ic_menu_my_qr"
         android:title="@string/my_QR" />
     <item
         android:id="@+id/menu_add_friend"
-        android:icon="@drawable/ic_person_add_black_24dp"
+        android:icon="@drawable/ic_menu_add_friend"
         android:title="@string/add_friend" />
 </menu>

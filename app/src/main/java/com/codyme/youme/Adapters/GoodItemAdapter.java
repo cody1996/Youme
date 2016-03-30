@@ -2,6 +2,10 @@ package com.codyme.youme.Adapters;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.style.RelativeSizeSpan;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -45,7 +49,24 @@ public class GoodItemAdapter extends ItemAdapter {
             e.printStackTrace();
         }
         try {
-            ((TextView) item.findViewById(R.id.item_good_price)).setText("￥"+info.getString("price"));
+            SpannableStringBuilder priceStringBuilder = new SpannableStringBuilder();
+            SpannableString symbolString = new SpannableString("￥");
+            symbolString.setSpan(new RelativeSizeSpan(0.618f), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            priceStringBuilder.append(symbolString);
+
+            String price[] = info.getString("price").split("\\.");
+            priceStringBuilder.append(price[0]);
+            SpannableString decimalString = new SpannableString("." + price[1]);
+            decimalString.setSpan(new RelativeSizeSpan(0.618f), 0, 3, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            priceStringBuilder.append(decimalString);
+
+            ((TextView) item.findViewById(R.id.item_good_price)).setText(priceStringBuilder);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        try {
+            ((TextView) item.findViewById(R.id.item_good_sales))
+                    .setText(String.valueOf(info.getInt("sales")) + "人已购买");
         } catch (JSONException e) {
             e.printStackTrace();
         }
