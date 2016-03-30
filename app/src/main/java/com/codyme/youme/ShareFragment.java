@@ -38,7 +38,7 @@ public class ShareFragment extends Fragment {
         contentView = inflater.inflate(R.layout.fragment_share, container, false);
 
         initList();
-        contentView.findViewById(R.id.btn_share_all).setSelected(true);
+        contentView.findViewById(R.id.btn_share_friends).setSelected(true);
 
         return contentView;
     }

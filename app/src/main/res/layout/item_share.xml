@@ -116,7 +116,8 @@
             android:background="@android:color/transparent"
             android:textColor="@color/color_text_link"
             android:text="转发"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <View
             android:layout_width="0.5dp"
@@ -132,7 +133,8 @@
             android:background="@android:color/transparent"
             android:textColor="@color/color_text_link"
             android:text="赞"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <View
             android:layout_width="0.5dp"
@@ -148,7 +150,8 @@
             android:background="@android:color/transparent"
             android:textColor="@color/color_text_link"
             android:text="评论"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <View

@@ -2,6 +2,7 @@ package com.codyme.youme.Adapters;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -17,6 +18,8 @@ import java.io.IOException;
  * Created by cody on 2016/3/14.
  */
 public class MsgItemAdapter extends ItemAdapter {
+    private final String TAG = "MsgItemAdapter";
+
     public MsgItemAdapter(Context context) {
         super(context);
     }
@@ -41,18 +44,30 @@ public class MsgItemAdapter extends ItemAdapter {
             e.printStackTrace();
         }
         try {
-            ((TextView)item.findViewById(R.id.item_msg_lastmsg)).setText(info.getString("lastmsg"));
+            ((TextView)item.findViewById(R.id.item_msg_last_msg)).setText(info.getString("last_msg"));
         } catch (JSONException e) {
             e.printStackTrace();
         }
         try {
-            ((TextView)item.findViewById(R.id.item_msg_lasttime)).setText(info.getString("lasttime"));
+            ((TextView)item.findViewById(R.id.item_msg_last_time)).setText(info.getString("last_time"));
         } catch (JSONException e) {
             e.printStackTrace();
         }
         try {
-            ((TextView)item.findViewById(R.id.item_msg_unreadcount)).setText(info.getString("unreadcount"));
-        } catch (JSONException e) {
+            int unread_count = info.getInt("unread_count");
+            if (unread_count > 0){
+                //Log.i(TAG, "unread_count > 0");
+                TextView unreadTV = (TextView)item.findViewById(R.id.item_msg_unread_count);
+                unreadTV.setVisibility(View.VISIBLE);
+                if (unread_count > 99){
+                    //Log.i(TAG, "unread_count > 99");
+                    unreadTV.setText("99+");
+                } else {
+                    //Log.i(TAG, "0 < unread_count < 99");
+                    unreadTV.setText(String.valueOf(unread_count));
+                }
+            }
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return item;

@@ -1,60 +1,53 @@
 {
   "list":[
     {
-      "head":"image/user_head_default.jpg",
-      "nickname":"昵称01",
-      "lastmsg":"最新消息01",
-      "lasttime":"08:00",
-      "unreadcount":"12"
+      "head":"image/user_head_01.jpg",
+      "nickname":"登山爱好者交流群",
+      "last_msg":"流星:这周末有没有什么活动？",
+      "last_time":"13:17",
+      "unread_count":56
     },
     {
-      "head":"image/user_head_default.jpg",
-      "nickname":"昵称02",
-      "lastmsg":"最新消息02",
-      "lasttime":"09:00",
-      "unreadcount":"3"
+      "head":"image/user_head_02.jpg",
+      "nickname":"古镇情怀看过来",
+      "last_msg":"李云东:三河古镇求组队[图片][图片][图片]",
+      "last_time":"13:08",
+      "unread_count":128
     },
     {
-      "head":"image/user_head_default.jpg",
-      "nickname":"昵称03",
-      "lastmsg":"最新消息03",
-      "lasttime":"10:00",
-      "unreadcount":"15"
+      "head":"image/user_head_03.jpg",
+      "nickname":"陈光智",
+      "last_msg":"最近去哪儿玩了啊？",
+      "last_time":"11:58",
+      "unread_count":2
     },
     {
-      "head":"image/user_head_default.jpg",
-      "nickname":"昵称04",
-      "lastmsg":"最新消息04",
-      "lasttime":"11:00",
-      "unreadcount":"99+"
+      "head":"image/user_head_04.jpg",
+      "nickname":"王思佳",
+      "last_msg":"那下次一起去玩吧^_^",
+      "last_time":"昨天",
+      "unread_count":0
     },
     {
-      "head":"image/user_head_default.jpg",
-      "nickname":"昵称05",
-      "lastmsg":"最新消息05",
-      "lasttime":"12:00",
-      "unreadcount":"15"
+      "head":"image/user_head_05.jpg",
+      "nickname":"Cody",
+      "last_msg":"上次去感觉还不错，强烈推荐哟~",
+      "last_time":"昨天",
+      "unread_count":0
     },
     {
-      "head":"image/user_head_default.jpg",
-      "nickname":"昵称06",
-      "lastmsg":"最新消息06",
-      "lasttime":"13:00",
-      "unreadcount":"10"
+      "head":"image/user_head_06.jpg",
+      "nickname":"柴同同",
+      "last_msg":"你好啊，很高兴认识你！[图片]",
+      "last_time":"星期二",
+      "unread_count":0
     },
     {
-      "head":"image/user_head_default.jpg",
-      "nickname":"昵称07",
-      "lastmsg":"最新消息07",
-      "lasttime":"14:00",
-      "unreadcount":"6"
-    },
-    {
-      "head":"image/user_head_default.jpg",
-      "nickname":"昵称08",
-      "lastmsg":"最新消息08",
-      "lasttime":"15:00",
-      "unreadcount":"2"
+      "head":"image/user_head_07.jpg",
+      "nickname":"小超人",
+      "last_msg":"哈哈哈哈哈，笑死宝宝了",
+      "last_time":"03-22-2016",
+      "unread_count":0
     }
   ]
 }
