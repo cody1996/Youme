@@ -64,4 +64,8 @@ public class ItemAdapter extends BaseAdapter {
     public View set (int position, View item){
         return itemList.set(position, item);
     }
+
+    public void clean(){
+        itemList = new ArrayList<>();
+    }
 }

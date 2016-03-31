@@ -1,6 +1,8 @@
 package com.codyme.youme.Views;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v4.view.PagerAdapter;
 import android.util.AttributeSet;
 import android.view.View;
@@ -9,6 +11,10 @@ import android.widget.ImageView;
 
 import com.codyme.youme.R;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -17,7 +23,7 @@ import java.util.ArrayList;
 public class LoopViewPager extends InnerViewPager {
     private final String TAG = "LoopViewPager";
 
-    private int mCount = 5;
+    private int mCount = 6;
     private int mIndex = 0;
 
     private Context mContext;
@@ -29,32 +35,37 @@ public class LoopViewPager extends InnerViewPager {
         super(context);
 
         mContext = context;
-
-        initViews();
-        initAdapter();
     }
 
     public LoopViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         mContext = context;
-
-        initViews();
-        initAdapter();
     }
 
-    private void initViews() {
-
-        mViewList = new ArrayList<View>();
-        for (int i = 0; i < mCount; i++){
-            ImageView imageView = new ImageView(mContext);
-            imageView.setAdjustViewBounds(true);
-            imageView.setImageDrawable(getResources().getDrawable(R.drawable.banner_default));
-            mViewList.add(imageView);
+    public void initViews(JSONArray infoList) {
+        mViewList = new ArrayList<>();
+        try {
+            for (int i = 0; i < infoList.length(); i ++){
+                ImageView imageView = new ImageView(mContext);
+                imageView.setAdjustViewBounds(true);
+                imageView.setImageBitmap(
+                        BitmapFactory.decodeStream(
+                                mContext.getAssets().open(
+                                        infoList.getJSONObject(i).getString("cover")
+                                )
+                        )
+                );
+                mViewList.add(imageView);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
     }
 
-    private void initAdapter() {
+    public void initAdapter() {
 
         mAdapter = new PagerAdapter() {
             @Override

@@ -4,15 +4,14 @@ package com.codyme.youme;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.codyme.youme.Adapters.BannerPagerAdapter;
 import com.codyme.youme.Adapters.TourItemAdapter;
 import com.codyme.youme.Utils.JSONHelper;
 import com.codyme.youme.Views.InnerListView;
+import com.codyme.youme.Views.LoopViewPager;
 import com.codyme.youme.Views.ViewPagerIndicator;
 
 import org.json.JSONArray;
@@ -30,8 +29,7 @@ public class TourFragment extends Fragment {
     private Intent gatewayIntent = new Intent();
 
     private View bannerMain;
-    private ViewPager pagerMain;
-    private BannerPagerAdapter bannerPagerAdapter;
+    private LoopViewPager pagerMain;
     private ViewPagerIndicator indicatorMain;
 
     private InnerListView listMain;
@@ -57,23 +55,17 @@ public class TourFragment extends Fragment {
 
     private void initBanner() {
         bannerMain = contentView.findViewById(R.id.banner_tour_main);
-        pagerMain = (ViewPager) bannerMain.findViewById(R.id.pager_banner);
-//        bannerPagerAdapter = new BannerPagerAdapter(getContext());
-//
-//        try {
-//            JSONObject result = JSONHelper.buildObjectFromAssets(getContext(), "json/banner_tour_main.json");
-//            JSONArray infoList = null;
-//
-//            if (result != null)
-//                infoList = result.getJSONArray("list");
-//
-//            for(int i = 0; i < infoList.length(); i++){
-//                bannerPagerAdapter.add(bannerPagerAdapter.initItem(infoList.getJSONObject(i)));
-//            }
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-//        pagerMain.setAdapter(bannerPagerAdapter);
+        pagerMain = (LoopViewPager) bannerMain.findViewById(R.id.pager_banner);
+        try {
+            pagerMain.initViews(
+                    JSONHelper.buildObjectFromAssets(
+                            getContext(), "json/banner_tour_main.json"
+                    ).getJSONArray("list")
+            );
+            pagerMain.initAdapter();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         indicatorMain = (ViewPagerIndicator) bannerMain.findViewById(R.id.indicator_banner);
         indicatorMain.setViewPager(pagerMain);
     }
