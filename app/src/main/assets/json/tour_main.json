@@ -1,32 +1,11 @@
 {
   "list":[
     {
-      "cover":"image/micro_tour_cover_01.jpg",
-      "title":"西递",
-      "subtitle":"桃花源里人家",
+      "cover":"image/tour_main_cover_01.png",
+      "title":"有觅大学生旅游节·安徽",
+      "subtitle":"由此而觅    爱上安徽    2016·3--2016·5",
       "price":"50.00",
-      "tag":"微旅行|古镇"
-    },
-    {
-      "cover":"image/micro_tour_cover_02.jpg",
-      "title":"宏村",
-      "subtitle":"中国画里的乡村",
-      "price":"40.00",
-      "tag":"微旅行|古镇"
-    },
-    {
-      "cover":"image/micro_tour_cover_03.jpg",
-      "title":"呈坎",
-      "subtitle":"呈坎双贤里，江南第一村",
-      "price":"40.00",
-      "tag":"微旅行|古镇"
-    },
-    {
-      "cover":"image/micro_tour_cover_04.jpg",
-      "title":"三河古镇",
-      "subtitle":"历史悠久的水乡古镇",
-      "price":"35.00",
-      "tag":"微旅行|古镇"
+      "tag":"旅游节|安徽"
     }
   ]
 }
