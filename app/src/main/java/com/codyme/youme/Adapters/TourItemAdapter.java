@@ -51,18 +51,24 @@ public class TourItemAdapter extends ItemAdapter {
             e.printStackTrace();
         }
         try {
-            SpannableStringBuilder priceStringBuilder = new SpannableStringBuilder();
-            SpannableString symbolString = new SpannableString("￥");
-            symbolString.setSpan(new RelativeSizeSpan(0.618f), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-            priceStringBuilder.append(symbolString);
+            String priceString = info.getString("price");
+            if (!priceString.equals("")){
+                TextView priceTV = (TextView)item.findViewById(R.id.item_tour_price);
 
-            String price[] = info.getString("price").split("\\.");
-            priceStringBuilder.append(price[0]);
-            SpannableString decimalString = new SpannableString("." + price[1]);
-            decimalString.setSpan(new RelativeSizeSpan(0.618f), 0, 3, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-            priceStringBuilder.append(decimalString);
+                SpannableStringBuilder priceStringBuilder = new SpannableStringBuilder();
+                SpannableString symbolString = new SpannableString("￥");
+                symbolString.setSpan(new RelativeSizeSpan(0.618f), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                priceStringBuilder.append(symbolString);
 
-            ((TextView)item.findViewById(R.id.item_tour_price)).setText(priceStringBuilder);
+                String pricePart[] = priceString.split("\\.");
+                priceStringBuilder.append(pricePart[0]);
+                SpannableString decimalString = new SpannableString("." + pricePart[1]);
+                decimalString.setSpan(new RelativeSizeSpan(0.618f), 0, 3, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                priceStringBuilder.append(decimalString);
+
+                priceTV.setVisibility(View.VISIBLE);
+                priceTV.setText(priceStringBuilder);
+            }
         } catch (JSONException e) {
             e.printStackTrace();
         }

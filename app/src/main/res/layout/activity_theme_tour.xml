@@ -50,7 +50,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:text="自然景观"
                     android:textSize="14sp"
-                    android:drawableTop="@drawable/gateway_default_1"
+                    android:drawableTop="@drawable/ic_tour_theme_nature"
                     android:padding="8dp"
                     app:layout_columnSpan="1"
                     app:layout_rowSpan="1"
@@ -65,7 +65,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:text="人文景观"
                     android:textSize="14sp"
-                    android:drawableTop="@drawable/gateway_default_2"
+                    android:drawableTop="@drawable/ic_tour_theme_cultural"
                     android:padding="8dp"
                     app:layout_columnSpan="1"
                     app:layout_rowSpan="1"
@@ -80,7 +80,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:text="体育旅游"
                     android:textSize="14sp"
-                    android:drawableTop="@drawable/gateway_default_3"
+                    android:drawableTop="@drawable/ic_tour_theme_sports"
                     android:padding="8dp"
                     app:layout_columnSpan="1"
                     app:layout_rowSpan="1"
@@ -95,7 +95,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:text="专业认知"
                     android:textSize="14sp"
-                    android:drawableTop="@drawable/gateway_default_4"
+                    android:drawableTop="@drawable/ic_tour_theme_tech"
                     android:padding="8dp"
                     app:layout_columnSpan="1"
                     app:layout_rowSpan="1"
@@ -110,52 +110,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:text="修学游"
                     android:textSize="14sp"
-                    android:drawableTop="@drawable/gateway_default_5"
-                    android:padding="8dp"
-                    app:layout_columnSpan="1"
-                    app:layout_rowSpan="1"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1" />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    app:layout_row="2"
-                    app:layout_column="2"
-                    android:background="?attr/selectableItemBackground"
-                    android:text="更多…"
-                    android:textSize="14sp"
-                    android:drawableTop="@drawable/gateway_default_6"
-                    android:padding="8dp"
-                    app:layout_columnSpan="1"
-                    app:layout_rowSpan="1"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1" />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    app:layout_row="2"
-                    app:layout_column="0"
-                    android:background="?attr/selectableItemBackground"
-                    android:text="红色游"
-                    android:textSize="14sp"
-                    android:drawableTop="@drawable/gateway_default_7"
-                    android:padding="8dp"
-                    app:layout_columnSpan="1"
-                    app:layout_rowSpan="1"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1" />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    app:layout_row="2"
-                    app:layout_column="1"
-                    android:background="?attr/selectableItemBackground"
-                    android:text="高校游"
-                    android:textSize="14sp"
-                    android:drawableTop="@drawable/gateway_default_1"
+                    android:drawableTop="@drawable/ic_tour_theme_study"
                     android:padding="8dp"
                     app:layout_columnSpan="1"
                     app:layout_rowSpan="1"
@@ -170,7 +125,52 @@
                     android:background="?attr/selectableItemBackground"
                     android:text="乡村游"
                     android:textSize="14sp"
-                    android:drawableTop="@drawable/gateway_default_2"
+                    android:drawableTop="@drawable/ic_tour_theme_village"
+                    android:padding="8dp"
+                    app:layout_columnSpan="1"
+                    app:layout_rowSpan="1"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_row="2"
+                    app:layout_column="0"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="红色游"
+                    android:textSize="14sp"
+                    android:drawableTop="@drawable/ic_tour_theme_red"
+                    android:padding="8dp"
+                    app:layout_columnSpan="1"
+                    app:layout_rowSpan="1"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_row="2"
+                    app:layout_column="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="高校游"
+                    android:textSize="14sp"
+                    android:drawableTop="@drawable/ic_tour_theme_colleage"
+                    android:padding="8dp"
+                    app:layout_columnSpan="1"
+                    app:layout_rowSpan="1"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_row="2"
+                    app:layout_column="2"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="更多…"
+                    android:textSize="14sp"
+                    android:drawableTop="@drawable/ic_tour_theme_more"
                     android:padding="8dp"
                     app:layout_columnSpan="1"
                     app:layout_rowSpan="1"
@@ -213,19 +213,18 @@
 
                 <EditText
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:inputType="numberDecimal"
                     android:ems="10"
                     android:layout_weight="1"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
                     android:maxLines="1"
                     android:singleLine="true"
                     android:textSize="16sp"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
                     android:background="@android:drawable/editbox_background_normal"
-                    android:text="500"/>
+                    android:text="500"
+                    android:layout_margin="8dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -237,19 +236,18 @@
 
                 <EditText
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:inputType="numberDecimal"
                     android:ems="10"
                     android:layout_weight="1"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
                     android:singleLine="true"
                     android:maxLines="1"
                     android:textSize="16sp"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
                     android:background="@android:drawable/editbox_background_normal"
-                    android:text="800" />
+                    android:text="800"
+                    android:layout_margin="8dp" />
 
             </LinearLayout>
 
@@ -275,14 +273,13 @@
                 <Spinner
                     android:id="@+id/spinner_tour_theme_days"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="16dp"
                     android:background="@android:drawable/editbox_background"
-                    android:focusable="true" />
+                    android:focusable="true"
+                    android:layout_margin="8dp" />
 
                 <Button
                     android:layout_width="wrap_content"
