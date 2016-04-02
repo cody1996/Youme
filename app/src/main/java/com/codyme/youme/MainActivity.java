@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
-                    case R.id.menu_share:
+                    case R.id.menu_add_share:
                         break;
 
                     case R.id.menu_scan_QR:

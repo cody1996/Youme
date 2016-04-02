@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MicroTourActivity"></activity>
+        <activity android:name=".MicroTourActivity" />
+        <activity android:name=".ThemeTourActivity"></activity>
     </application>
 
 </manifest>

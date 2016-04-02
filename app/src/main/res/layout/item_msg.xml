@@ -6,12 +6,13 @@
     android:padding="8dp">
 
     <ImageView
+        android:id="@+id/item_msg_head"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/user_head_default"/>
+        android:src="@drawable/user_head_default" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -22,11 +23,11 @@
         android:gravity="left">
 
         <TextView
+            android:id="@+id/item_msg_nickname"
             android:layout_width="match_parent"
             android:layout_height="28dp"
             android:layout_weight="1"
-            android:text="Nickname"
-            android:paddingRight="56dp"
+            android:paddingRight="24dp"
             android:maxLines="1"
             android:ellipsize="end"
             android:gravity="left|center_vertical"
@@ -34,11 +35,11 @@
             android:textSize="18sp" />
 
         <TextView
+            android:id="@+id/item_msg_last_msg"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:layout_weight="1"
-            android:text="你好啊！哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
-            android:paddingRight="56dp"
+            android:paddingRight="24dp"
             android:maxLines="1"
             android:ellipsize="end"
             android:gravity="left|center_vertical"
@@ -51,27 +52,31 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:paddingRight="8dp"
-        android:gravity="center_horizontal|right">
+        android:gravity="top|right">
 
         <TextView
+            android:id="@+id/item_msg_last_time"
             android:layout_width="wrap_content"
-            android:layout_height="28dp"
-            android:text="昨天"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:padding="4dp" />
 
         <TextView
+            android:id="@+id/item_msg_unread_count"
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:text="99+"
+            android:layout_height="wrap_content"
             android:textColor="@android:color/white"
-            android:textSize="11sp"
+            android:textSize="12sp"
             android:background="@drawable/tip_msg_new"
             android:gravity="center"
-            android:layout_gravity="center"
-            android:minHeight="20dp"
             android:minWidth="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:minHeight="20dp"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:text="9" />
 
     </LinearLayout>
 

@@ -9,6 +9,15 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.codyme.youme.Adapters.TourItemAdapter;
+import com.codyme.youme.Utils.JSONHelper;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class MicroTourActivity extends AppCompatActivity {
 
@@ -27,10 +36,25 @@ public class MicroTourActivity extends AppCompatActivity {
     }
 
     private void initList() {
-        findViewById(R.id.btn_micro_classification_nature).setSelected(true);
+        findViewById(R.id.btn_micro_town).setSelected(true);
         listMain = (ListView) findViewById(R.id.list_micro_tour_main);
         mAdapter = new TourItemAdapter(this);
         listMain.setAdapter(mAdapter);
+
+        try {
+            JSONObject result = JSONHelper.buildObjectFromAssets(this, "json/tour_micro_town.json");
+            JSONArray infoList = null;
+
+            if (result != null)
+                infoList = result.getJSONArray("list");
+
+            for(int i = 0; i < infoList.length(); i++){
+                mAdapter.add(mAdapter.initItem(infoList.getJSONObject(i)));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void initToolbar() {
@@ -55,7 +79,7 @@ public class MicroTourActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_micro_tour, menu);
+        getMenuInflater().inflate(R.menu.menu_search_only, menu);
         return true;
     }
 }

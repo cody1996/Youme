@@ -1,0 +1,32 @@
+{
+  "list":[
+    {
+      "cover":"image/good_store_cover_01.png",
+      "title":"徽风皖韵",
+      "subtitle":"让您足不出户，尝遍安徽特产！",
+      "tag":"安徽，美食",
+      "sales":2733
+    },
+    {
+      "cover":"image/good_store_cover_02.png",
+      "title":"徽尘记忆",
+      "subtitle":"芜湖铁画，独家定做",
+      "tag":"安徽，美食",
+      "sales":3288
+    },
+    {
+      "cover":"image/good_store_cover_03.png",
+      "title":"皖里来",
+      "subtitle":"精选优质特产，\n        用心做好品质！",
+      "tag":"安徽，美食",
+      "sales":1987
+    },
+    {
+      "cover":"image/good_store_cover_04.png",
+      "title":"寻徽记",
+      "subtitle":"徽州特产领航者\n徽品牌  原产地  原生态",
+      "tag":"安徽，美食",
+      "sales":2598
+    }
+  ]
+}

@@ -5,55 +5,99 @@
     android:layout_height="wrap_content"
     android:background="@android:drawable/dialog_holo_light_frame"
     android:padding="8dp">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingRight="8dp"
-        android:paddingTop="8dp"
-        android:paddingLeft="8dp">
-        
-        <ImageView
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/user_head_default" />
-        
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@android:color/background_light">
+
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="36dp"
-            android:layout_weight="1"
-            android:paddingLeft="8dp">
-            
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:text="Nickname"
-                android:textColor="@color/color_text_link"
-                android:textSize="16sp"
-                android:gravity="left|center_vertical" />
-            
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="16dp"
-                android:text="2月27日    山东省济南市"
-                android:textSize="14sp"
-                android:gravity="left|center_vertical" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_share_head"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/user_head_default" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/item_share_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/color_text_link"
+                    android:textSize="16sp"
+                    android:gravity="left|center_vertical"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginRight="72dp"
+                    android:text="Cody" />
+
+                <TextView
+                    android:id="@+id/item_share_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:textSize="14sp"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_share_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:maxLines="8"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <LinearLayout
+            android:id="@+id/item_share_image_list"
+            android:orientation="horizontal"
+            android:layout_width="4800dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/item_share_image_1"
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+                android:visibility="gone"
+                android:adjustViewBounds="true"
+                android:layout_marginRight="4dp" />
+
+            <ImageView
+                android:id="@+id/item_share_image_2"
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+                android:visibility="gone"
+                android:adjustViewBounds="true"
+                android:layout_marginRight="4dp" />
+
+            <ImageView
+                android:id="@+id/item_share_image_3"
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+                android:visibility="gone"
+                android:adjustViewBounds="true" />
         </LinearLayout>
     </LinearLayout>
-    
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
-        android:textSize="16sp"
-        android:textColor="@android:color/black"
-        android:maxLines="4"
-        android:ellipsize="end"
-        android:gravity="left|center_vertical"
-        android:padding="8dp" />
 
     <View
         android:layout_width="match_parent"
@@ -72,7 +116,8 @@
             android:background="@android:color/transparent"
             android:textColor="@color/color_text_link"
             android:text="转发"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <View
             android:layout_width="0.5dp"
@@ -88,7 +133,8 @@
             android:background="@android:color/transparent"
             android:textColor="@color/color_text_link"
             android:text="赞"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <View
             android:layout_width="0.5dp"
@@ -104,7 +150,8 @@
             android:background="@android:color/transparent"
             android:textColor="@color/color_text_link"
             android:text="评论"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <View
@@ -113,22 +160,26 @@
         android:background="@color/trans_dark_2"/>
 
     <TextView
+        android:id="@+id/item_share_thumb_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="XXX，XXX，XX觉得很赞"
+        android:visibility="gone"
         android:padding="8dp" />
 
     <View
+        android:id="@+id/item_share_thumb_up_divider"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
+        android:visibility="gone"
         android:background="@color/trans_dark_2"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"/>
 
     <TextView
+        android:id="@+id/item_share_comment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="XXX：内容内容。\nXXX：内容内容。\nXXX：内容内容。\nXXX：内容内容。"
+        android:visibility="gone"
         android:padding="8dp"
         android:ellipsize="end" />
 

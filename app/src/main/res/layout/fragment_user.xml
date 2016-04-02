@@ -19,48 +19,15 @@
             android:layout_gravity="center" />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="你还未登录！"
-            android:id="@+id/textView"
+            android:text="请点击头像登录"
             android:gravity="center"
             android:padding="8dp"
             android:textIsSelectable="false"
             android:textSize="16sp"
             android:textColor="@android:color/white" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
-
-            <Button
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:text="登录"
-                android:id="@+id/button"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:layout_marginRight="36dp"
-                android:padding="8dp"
-                android:gravity="center"
-                android:minHeight="36dp" />
-
-            <Button
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:text="注册"
-                android:id="@+id/button2"
-                android:textSize="18sp"
-                android:textColor="@android:color/white"
-                android:background="?attr/selectableItemBackground"
-                android:layout_marginLeft="36dp"
-                android:padding="8dp"
-                android:gravity="center"
-                android:minHeight="36dp" />
-        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -78,8 +45,8 @@
             android:text="  浏览历史"
             android:id="@+id/button6"
             android:textSize="18sp"
-            android:drawableLeft="@drawable/user_default_1"
-            android:drawableStart="@drawable/user_default_1"
+            android:drawableLeft="@drawable/ic_user_history"
+            android:drawableStart="@drawable/ic_user_history"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:paddingLeft="16dp"
@@ -95,8 +62,8 @@
             android:text="  我的收藏"
             android:id="@+id/button5"
             android:textSize="18sp"
-            android:drawableLeft="@drawable/user_default_2"
-            android:drawableStart="@drawable/user_default_2"
+            android:drawableLeft="@drawable/ic_user_favourites"
+            android:drawableStart="@drawable/ic_user_favourites"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:paddingLeft="16dp"
@@ -104,7 +71,7 @@
 
         <View android:layout_width="match_parent"
             android:layout_height="8dp"
-            android:background="@color/trans_dark_2"
+            android:background="@color/color_grey_150"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp" />
 
@@ -116,8 +83,8 @@
             android:text="  我的钱包"
             android:id="@+id/button3"
             android:textSize="18sp"
-            android:drawableLeft="@drawable/user_default_5"
-            android:drawableStart="@drawable/user_default_5"
+            android:drawableLeft="@drawable/ic_user_wallet"
+            android:drawableStart="@drawable/ic_user_wallet"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:paddingLeft="16dp"
@@ -133,8 +100,8 @@
             android:text="  我的订单"
             android:id="@+id/button4"
             android:textSize="18sp"
-            android:drawableLeft="@drawable/user_default_3"
-            android:drawableStart="@drawable/user_default_3"
+            android:drawableLeft="@drawable/ic_user_orders"
+            android:drawableStart="@drawable/ic_user_orders"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:paddingLeft="16dp"
@@ -150,8 +117,8 @@
             android:text="  我的觅迹"
             android:id="@+id/button10"
             android:textSize="18sp"
-            android:drawableLeft="@drawable/user_default_4"
-            android:drawableStart="@drawable/user_default_4"
+            android:drawableLeft="@drawable/ic_user_footprint"
+            android:drawableStart="@drawable/ic_user_footprint"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:paddingLeft="16dp"
@@ -159,7 +126,7 @@
 
         <View android:layout_width="match_parent"
             android:layout_height="8dp"
-            android:background="@color/trans_dark_2"
+            android:background="@color/color_grey_150"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp" />
 
@@ -171,8 +138,8 @@
             android:text="  应用设置"
             android:id="@+id/button7"
             android:textSize="18sp"
-            android:drawableLeft="@drawable/user_default_1"
-            android:drawableStart="@drawable/user_default_1"
+            android:drawableLeft="@drawable/ic_user_settings"
+            android:drawableStart="@drawable/ic_user_settings"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:paddingLeft="16dp"
@@ -188,8 +155,8 @@
             android:text="  反馈"
             android:id="@+id/button8"
             android:textSize="18sp"
-            android:drawableLeft="@drawable/user_default_2"
-            android:drawableStart="@drawable/user_default_2"
+            android:drawableLeft="@drawable/ic_user_feedback"
+            android:drawableStart="@drawable/ic_user_feedback"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:paddingLeft="16dp"
@@ -205,8 +172,8 @@
             android:text="  关于"
             android:id="@+id/button9"
             android:textSize="18sp"
-            android:drawableLeft="@drawable/user_default_5"
-            android:drawableStart="@drawable/user_default_5"
+            android:drawableLeft="@drawable/ic_user_about"
+            android:drawableStart="@drawable/ic_user_about"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:paddingLeft="16dp"

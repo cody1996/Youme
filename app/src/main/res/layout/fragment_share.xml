@@ -9,7 +9,8 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
         android:background="@color/colorPrimary"
         android:gravity="center">
 
@@ -45,7 +46,7 @@
             android:layout_weight="1"
             android:background="@drawable/bg_indicator_horizontal"
             android:textSize="16sp"
-            android:textColor="@color/color_text_nav" />
+            android:textColor="@color/color_text_selectable" />
 
         <Button
             android:layout_width="0dp"
@@ -55,17 +56,17 @@
             android:layout_weight="1"
             android:background="@drawable/bg_indicator_horizontal"
             android:textSize="16sp"
-            android:textColor="@color/color_text_nav" />
+            android:textColor="@color/color_text_selectable" />
 
         <Button
+            android:id="@+id/btn_share_friends"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="觅友"
-            android:id="@+id/button15"
             android:layout_weight="1"
             android:background="@drawable/bg_indicator_horizontal"
             android:textSize="16sp"
-            android:textColor="@color/color_text_nav" />
+            android:textColor="@color/color_text_selectable" />
 
         <Button
             android:layout_width="0dp"
@@ -75,7 +76,7 @@
             android:layout_weight="1"
             android:background="@drawable/bg_indicator_horizontal"
             android:textSize="16sp"
-            android:textColor="@color/color_text_nav" />
+            android:textColor="@color/color_text_selectable" />
     </LinearLayout>
 
     <View

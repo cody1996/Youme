@@ -7,17 +7,20 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by cody on 2016/3/10.
  */
 public class ItemAdapter extends BaseAdapter {
+    protected Context mContext;
     protected LayoutInflater mInflater;
 
-    protected ArrayList<View> itemList;
+    private List<View> itemList;
 
     public ItemAdapter (Context context){
-        mInflater = LayoutInflater.from(context);
+        mContext = context;
+        mInflater = LayoutInflater.from(mContext);
         itemList = new ArrayList<>();
     }
 
@@ -60,5 +63,9 @@ public class ItemAdapter extends BaseAdapter {
 
     public View set (int position, View item){
         return itemList.set(position, item);
+    }
+
+    public void clean(){
+        itemList = new ArrayList<>();
     }
 }
